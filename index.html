@@ -4,56 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main page</title>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 40px 0px 0px;
+    }
+    .nav-header-item {
+      margin: 10px;
+    }
+    .hero-heading {
+      font-size: 40px;
+      width: 518px;
+    }
+    .hero-paragraph {
+      width: 493.6px;
+    }
+    .easy-peasy {
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+    .steps {
+      display: flex;
+    }
+    .card {
+      border: 3px dashed #000;
+      margin: 5px;
+      padding: 5px;
+    }
+    .black-card {
+      background-color: black;
+      color: aliceblue;
+      border-color: aliceblue;
+    }
+  </style>
 </head>
 <body>
 
 <!-- Header -->
   <header>
     <h1 class="logo-header">Developli</h1>
-    <nav class="nav-header">
-      <ul type="none">
-        <li>Employers</li>
-        <li>Candidates</li>
-        <li>Company</li>
-        <li>Blog</li>
+    <nav>
+      <ul class="nav-header" type="none">
+        <li class="nav-header-item">Employers</li>
+        <li class="nav-header-item">Candidates</li>
+        <li class="nav-header-item">Company</li>
+        <li class="nav-header-item">Blog</li>
       </ul>
     </nav>
   </header>
+  <hr>
 
 <main>
 
   <!-- Hero block -->
   <section class="hero">
-    <h1>Let’s boost up your hiring process</h1>
+    <h1 class="hero-heading">Let’s boost up your hiring process</h1>
 
-    <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
+    <p class="hero-paragraph">We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
 
     <button>Start hiring</button>
     <button disabled>Post a job</button>
   </section>
+  <hr>
   
-  <article>
+  <article class="easy-peasy">
     <h1>With Developli, hiring is easy-peasy, lemon squeezy</h1>
     <p>Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
   </article>
+  <hr>
 
   <!-- Step's block -->
   <section class="steps">
-    <div class="white-card">
+    <div class="card white-card">
       <h1>Post your job</h1>
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
 
-    <div class="black-card">
+    <div class="card black-card">
       <h1>Manage applicants</h1>
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
 
-    <div class="white-card">
+    <div class="card white-card">
       <h1>Easily find quality matches</h1>
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
   </section>
+  <hr>
 
   <!-- Platform's block -->
   <section class="platform">
@@ -61,11 +104,13 @@
     <p>We are offering an alternative route towards the traditional hiring process. What do we want in return? Sign up and leave the rest to us.</p>
     <button>Get started</button>
   </section>
+  <hr>
 
   <article>
     <h1>A world of opportunities</h1>
     <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
   </article>
+  <hr>
 
   <!-- Advantages block -->
   <section class="advantages">
@@ -89,6 +134,7 @@
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
   </section>
+  <hr>
 
   <article>
     <h1>Working with world class partners</h1>
@@ -98,6 +144,7 @@
       <button>--></button>
     </div>
   </article>
+  <hr>
 
   <!-- Reviews block -->
   <section class="reviews">
@@ -126,6 +173,7 @@
       <address>Leila Khoury, CEO</address>
     </div>
   </section>
+  <hr>
 
   <!-- ТУТ НЕ ЯСНО -->
   <!-- Partners block -->
@@ -137,6 +185,7 @@
     <a>stripe</a>
     <a>zendesk</a>
   </section>
+  <hr>
 
   <section class="get-started">
     <h1>Hire your dream team today</h1>
@@ -144,6 +193,7 @@
   </section>
 
 </main>
+<hr>
 
 <footer>
   <h1 class="logo-footer">Developli</h1>
