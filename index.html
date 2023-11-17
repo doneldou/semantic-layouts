@@ -76,6 +76,31 @@
       justify-content: space-between;
       margin: 0px 50px;
     }
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .upperline {
+      display: flex;
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-footer {
+      display: flex;
+    }
+    .underline {
+      display: flex;
+      justify-content: space-between;
+    }
+    .underline-list {
+      margin: 0px 30px;
+      display: flex;
+    }
+    .underline-list-item {
+      margin: 0px 10px;
+    }
   </style>
 </head>
 <body>
@@ -232,55 +257,60 @@
 <hr>
 
 <footer>
-  <h1 class="logo-footer">Developli</h1>
+  <div class="upperline">
+    <div class="contacts">
+      <h1 class="logo-footer">Developli</h1>
+    
+      <div class="contact-us">
+        <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
+        <a href="tel.00966 2 6676760">00966 2 6676760</a>
+      </div>
+    </div>
   
-  <span class="contact-us">
-    <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
-    <a href="tel.00966 2 6676760">00966 2 6676760</a>
-  </span>
+    <nav class="nav-footer">
+      <ul type="none">
+        <h3>Employers</h3>
+        <li>Start Hiring</li>
+        <li>Volunteer</li>
+        <li>Diversity and Inclusion</li>
+      </ul>
+  
+      <ul type="none">
+        <h3>Candidates</h3>
+        <li>Get Hired</li>
+        <li>Internships</li>
+        <li>Temporary Employment</li>
+        <li>Graduates</li>
+        <li>Volunteer</li>
+      </ul>
+  
+      <ul type="none">
+        <h3>Company</h3>
+        <li>For Students</li>
+        <li>Careers</li>
+        <li>Brand Ambassadors</li>
+        <li>About</li>
+        <li>Resources</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+  </div>
 
-  <nav class="nav-footer">
-    <ul type="none">
-      <h3>Employers</h3>
-      <li>Start Hiring</li>
-      <li>Volunteer</li>
-      <li>Diversity and Inclusion</li>
-    </ul>
-
-    <ul type="none">
-      <h3>Candidates</h3>
-      <li>Get Hired</li>
-      <li>Internships</li>
-      <li>Temporary Employment</li>
-      <li>Graduates</li>
-      <li>Volunteer</li>
-    </ul>
-
-    <ul type="none">
-      <h3>Company</h3>
-      <li>For Students</li>
-      <li>Careers</li>
-      <li>Brand Ambassadors</li>
-      <li>About</li>
-      <li>Resources</li>
-      <li>Blog</li>
-    </ul>
-  </nav>
-  <hr>
+  <div>
+    <hr>
+  </div>
 
   <div class="underline">
     <span>Copyright © 2022</span>
 
-    <ul type="none">
-      <li>Terms of Service</li>
-      <li>Privacy policy</li>
-      <li>Offer terms</li>
+    <ul class="underline-list" type="none">
+      <li class="underline-list-item">Terms of Service</li>
+      <li class="underline-list-item">Privacy policy</li>
+      <li class="underline-list-item">Offer terms</li>
     </ul>
 
   </div>
 
 </footer>
-
-
 </body>
 </html>
