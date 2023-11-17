@@ -24,7 +24,7 @@
     .hero-paragraph {
       width: 493.6px;
     }
-    .easy-peasy {
+    article.standart {
       display: flex;
       flex-direction: column;
       align-items: center
@@ -41,6 +41,23 @@
       background-color: black;
       color: aliceblue;
       border-color: aliceblue;
+    }
+    .advantage {
+      display: flex;
+    }
+    .advantage-card {
+      border: 3px dashed #000;
+      margin: 5px;
+      padding: 5px;
+    }
+    article.world-class {
+      display: flex;
+      justify-content: space-between;
+    }
+    .world-class-slide-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   </style>
 </head>
@@ -73,7 +90,7 @@
   </section>
   <hr>
   
-  <article class="easy-peasy">
+  <article class="standart">
     <h1>With Developli, hiring is easy-peasy, lemon squeezy</h1>
     <p>Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
   </article>
@@ -81,7 +98,7 @@
 
   <!-- Step's block -->
   <section class="steps">
-    <div class="card white-card">
+    <div class="card">
       <h1>Post your job</h1>
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
@@ -91,7 +108,7 @@
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
 
-    <div class="card white-card">
+    <div class="card">
       <h1>Easily find quality matches</h1>
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
     </div>
@@ -106,14 +123,14 @@
   </section>
   <hr>
 
-  <article>
+  <article class="standart">
     <h1>A world of opportunities</h1>
     <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
   </article>
   <hr>
 
   <!-- Advantages block -->
-  <section class="advantages">
+  <section class="advantage">
     <div class="advantage-card">
       <h1>Detailed analytics</h1>
       <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
@@ -136,12 +153,14 @@
   </section>
   <hr>
 
-  <article>
+  <article class="world-class">
     <h1>Working with world class partners</h1>
-    <p>Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
+    <div class="world-class-slide-bar">
+      <p>Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
     <div class="buttons-bar">
       <button><--</button>
       <button>--></button>
+    </div>
     </div>
   </article>
   <hr>
