@@ -3,7 +3,321 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog page</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px 0px 0px;
+      }
+      .nav-header-item {
+        margin: 10px;
+      }
+      .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .suggested {
+        display: flex;
+      }
+      .suggested-item {
+        margin: 0px 10px;
+      }
+      .article {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+      }
+      .article-card-big {
+        grid-row: span 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 3px black dashed;
+      }
+      .article-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 3px black dashed;
+      }
+      .article-section-title {
+        display: flex;
+        justify-content: space-between;
+      }
+      .article-section-button {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .popular-articles {
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        gap: 10px;
+      }
+      .article-section-content {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+      }
+      .articles-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 3px black dashed;
+      }
+      .recent-articles {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        gap: 10px;
+      }
+      .recent-article-section-content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+      }
+      .career-tips-article-section-content {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+      }
+      .upperline {
+        display: flex;
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-footer {
+        display: flex;
+      }
+      .underline {
+        display: flex;
+        justify-content: space-between;
+      }
+      .underline-list {
+        margin: 0px 30px;
+        display: flex;
+      }
+      .underline-list-item {
+        margin: 0px 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo-header">Developli</h1>
+      <nav>
+        <ul class="nav-header" type="none">
+          <li class="nav-header-item">Employers</li>
+          <li class="nav-header-item">Candidates</li>
+          <li class="nav-header-item">Company</li>
+          <li class="nav-header-item">Blog</li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <!-- Search block -->
+    <section class="search">
+      <h1>Our Blog</h1>
+      <div class="search-bar">
+        <input type="search" placeholder="Search article name" />
+        <button>Search</button>
+      </div>
+      <ul class="suggested" type="none">
+        Suggested:
+        <li class="suggested-item">Career Tips</li>
+        <li class="suggested-item">Interview</li>
+        <li class="suggested-item">Work From Home</li>
+        <li class="suggested-item">Success Story</li>
+      </ul>
+    </section>
+    <hr />
+    <!-- Article block -->
+    <section class="article">
+      <article class="article-card-big">
+        <date>9 Sep 2022</date>
+        <p>Career Tips</p>
+        <h1>Working Multiple Remote Jobs: What You Need to know</h1>
+      </article>
+      <article class="article-card">
+        <date>9 Sep 2022</date>
+        <p>Career Tips</p>
+        <h1>How to Figure Out If a Potential Employer Offers Paid Leave</h1>
+      </article>
+      <article class="article-card">
+        <date>28 Oct 2022</date>
+        <p>Career Tips</p>
+        <h1>The Hidden Savings (and Costs) of Working From Home</h1>
+      </article>
+      <article class="article-card">
+        <date>21 Aug 2022</date>
+        <p>Interviews</p>
+        <h1>25 Companies Hiring for Remote, Work-From-Home Jobs Right Now</h1>
+      </article>
+    </section>
+    <hr />
+    <!-- Popular Articles block -->
+    <section class="popular-articles">
+      <div class="article-section-title">
+        <div>
+          <h1>Popular Articles</h1>
+          <p>We provide blog that help start your career on developli</p>
+        </div>
+        <button class="article-section-button">View All --></button>
+      </div>
+
+      <div class="article-section-content">
+        <article class="articles-card">
+          <date>9 Sep 2022</date>
+          <p>Career Tips</p>
+          <h1>How Working From Home Can Reduce Stress</h1>
+          <p>Feeling like work is a constant source of stress? You’re not...</p>
+        </article>
+        <article class="articles-card">
+          <date>9 Sep 2022</date>
+          <p>Career Tips</p>
+          <h1>How to Break Into Remote Work Industries: 5 Tips</h1>
+          <p>Whether you’re speaking with the recruiter or you're in the ...</p>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <!-- Recent Articles -->
+    <section class="recent-articles">
+      <div class="article-section-title">
+        <div>
+          <h1>Recent Articles</h1>
+          <p>Latest articles from Developli</p>
+        </div>
+        <button class="article-section-button">View All --></button>
+      </div>
+
+      <div class="recent-article-section-content">
+        <article class="articles-card">
+          <date>16 May 2022</date>
+          <p>Career Tips</p>
+          <h1>How Working From Home Can Reduce Stress</h1>
+        </article>
+        <article class="articles-card">
+          <date>3 Sep 2022</date>
+          <p>Interviews</p>
+          <h1>How to Know Your Resume Is Ready to be Submitted</h1>
+        </article>
+        <article class="articles-card">
+          <date>7 Feb 2022</date>
+          <p>Interviews</p>
+          <h1>How to Sharpen Your Social Skills When You WFH</h1>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <!-- Career Tips -->
+    <section class="career-tips">
+      <div class="article-section-title">
+        <div>
+          <h1>Career Tips</h1>
+          <p>Tips from succeed user from jobify</p>
+        </div>
+        <button class="article-section-button">View All --></button>
+      </div>
+
+      <div class="career-tips-article-section-content">
+        <article class="articles-card">
+          <date>15 Aug 2022</date>
+          <p>Career Tips</p>
+          <h1>How to explain why you’re right for the job</h1>
+          <p>
+            Whether you’re speaking with the recruiter or you're in the final
+            stages of the interview process, you know you have the chops for the
+            role.
+          </p>
+        </article>
+        <article class="articles-card">
+          <date>16 May 2022</date>
+          <p>Career Tips</p>
+          <h1>
+            How do you answer the question, “How do you like to be managed?”
+          </h1>
+          <p>
+            It sounds like a trick question: Answer it the wrong way, and you
+            could find yourself at odds with a new boss or without a job offer.
+          </p>
+        </article>
+        <article class="articles-card">
+          <date>24 Dec 2022</date>
+          <p>Career Tips</p>
+          <h1>Tips for shaking your job interview jitters</h1>
+          <p>
+            Going into an interview can be nerve-wracking even for the most
+            confident candidate. But an interview isn’t just a time.
+          </p>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="upperline">
+        <div class="contacts">
+          <h1 class="logo-footer">Developli</h1>
+
+          <div class="contact-us">
+            <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
+            <a href="tel.00966 2 6676760">00966 2 6676760</a>
+          </div>
+        </div>
+
+        <nav class="nav-footer">
+          <ul type="none">
+            <h3>Employers</h3>
+            <li>Start Hiring</li>
+            <li>Volunteer</li>
+            <li>Diversity and Inclusion</li>
+          </ul>
+
+          <ul type="none">
+            <h3>Candidates</h3>
+            <li>Get Hired</li>
+            <li>Internships</li>
+            <li>Temporary Employment</li>
+            <li>Graduates</li>
+            <li>Volunteer</li>
+          </ul>
+
+          <ul type="none">
+            <h3>Company</h3>
+            <li>For Students</li>
+            <li>Careers</li>
+            <li>Brand Ambassadors</li>
+            <li>About</li>
+            <li>Resources</li>
+            <li>Blog</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <hr />
+      </div>
+
+      <div class="underline">
+        <span>Copyright © 2022</span>
+
+        <ul class="underline-list" type="none">
+          <li class="underline-list-item">Terms of Service</li>
+          <li class="underline-list-item">Privacy policy</li>
+          <li class="underline-list-item">Offer terms</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
