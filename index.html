@@ -1,316 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main page</title>
-  <style>
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-    .nav-header {
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 40px 0px 0px;
-    }
-    .nav-header-item {
-      margin: 10px;
-    }
-    .hero-heading {
-      font-size: 40px;
-      width: 518px;
-    }
-    .hero-paragraph {
-      width: 493.6px;
-    }
-    article.standart {
-      display: flex;
-      flex-direction: column;
-      align-items: center
-    }
-    .steps {
-      display: flex;
-    }
-    .card {
-      border: 3px dashed #000;
-      margin: 5px;
-      padding: 5px;
-    }
-    .black-card {
-      background-color: black;
-      color: aliceblue;
-      border-color: aliceblue;
-    }
-    .advantage {
-      display: flex;
-    }
-    .advantage-card {
-      border: 3px dashed #000;
-      margin: 5px;
-      padding: 5px;
-    }
-    article.world-class {
-      display: flex;
-      justify-content: space-between;
-    }
-    .world-class-slide-bar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .reviews {
-      display: flex;
-    }
-    .reviews-card {
-      width: 400px;
-      border: 3px dashed #000;
-      margin: 5px;
-      padding: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .partners-bar {
-      display: flex;
-      justify-content: space-between;
-      margin: 0px 50px;
-    }
-    footer {
-      display: flex;
-      flex-direction: column;
-    }
-    .upperline {
-      display: flex;
-    }
-    .contacts {
-      display: flex;
-      flex-direction: column;
-    }
-    .nav-footer {
-      display: flex;
-    }
-    .underline {
-      display: flex;
-      justify-content: space-between;
-    }
-    .underline-list {
-      margin: 0px 30px;
-      display: flex;
-    }
-    .underline-list-item {
-      margin: 0px 10px;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px 0px 0px;
+      }
+      .nav-header-item {
+        margin: 10px;
+      }
+      .hero-heading {
+        font-size: 40px;
+        width: 518px;
+      }
+      .hero-paragraph {
+        width: 493.6px;
+      }
+      article.standart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .steps {
+        display: flex;
+      }
+      .card {
+        border: 3px dashed #000;
+        margin: 5px;
+        padding: 5px;
+      }
+      .black-card {
+        background-color: black;
+        color: aliceblue;
+        border-color: aliceblue;
+      }
+      .advantage {
+        display: flex;
+      }
+      .advantage-card {
+        border: 3px dashed #000;
+        margin: 5px;
+        padding: 5px;
+      }
+      article.world-class {
+        display: flex;
+        justify-content: space-between;
+      }
+      .world-class-slide-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .reviews {
+        display: flex;
+      }
+      .reviews-card {
+        width: 400px;
+        border: 3px dashed #000;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .partners-bar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 50px;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+      }
+      .upperline {
+        display: flex;
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-footer {
+        display: flex;
+      }
+      .underline {
+        display: flex;
+        justify-content: space-between;
+      }
+      .underline-list {
+        margin: 0px 30px;
+        display: flex;
+      }
+      .underline-list-item {
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo-header">Developli</h1>
+      <nav>
+        <ul class="nav-header" type="none">
+          <li class="nav-header-item">Employers</li>
+          <li class="nav-header-item">Candidates</li>
+          <li class="nav-header-item">Company</li>
+          <li class="nav-header-item">Blog</li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
 
-<!-- Header -->
-  <header>
-    <h1 class="logo-header">Developli</h1>
-    <nav>
-      <ul class="nav-header" type="none">
-        <li class="nav-header-item">Employers</li>
-        <li class="nav-header-item">Candidates</li>
-        <li class="nav-header-item">Company</li>
-        <li class="nav-header-item">Blog</li>
-      </ul>
-    </nav>
-  </header>
-  <hr>
+    <main>
+      <!-- Hero block -->
+      <section class="hero">
+        <h1 class="hero-heading">Let’s boost up your hiring process</h1>
 
-<main>
+        <p class="hero-paragraph">
+          We are nost efficient and reliable souce of hiring perocess and two
+          time faster than any other companies
+        </p>
 
-  <!-- Hero block -->
-  <section class="hero">
-    <h1 class="hero-heading">Let’s boost up your hiring process</h1>
+        <button>Start hiring</button>
+        <button disabled>Post a job</button>
+      </section>
+      <hr />
 
-    <p class="hero-paragraph">We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
+      <article class="standart">
+        <h1>With Developli, hiring is easy-peasy, lemon squeezy</h1>
+        <p>
+          Our hiring process is so simple and easy to do, just follow the steps
+          and you’re done!
+        </p>
+      </article>
+      <hr />
 
-    <button>Start hiring</button>
-    <button disabled>Post a job</button>
-  </section>
-  <hr>
-  
-  <article class="standart">
-    <h1>With Developli, hiring is easy-peasy, lemon squeezy</h1>
-    <p>Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
-  </article>
-  <hr>
+      <!-- Step's block -->
+      <section class="steps">
+        <div class="card">
+          <h1>Post your job</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
 
-  <!-- Step's block -->
-  <section class="steps">
-    <div class="card">
-      <h1>Post your job</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
+        <div class="card black-card">
+          <h1>Manage applicants</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
 
-    <div class="card black-card">
-      <h1>Manage applicants</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
+        <div class="card">
+          <h1>Easily find quality matches</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
+      </section>
+      <hr />
 
-    <div class="card">
-      <h1>Easily find quality matches</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
-  </section>
-  <hr>
+      <!-- Platform's block -->
+      <section class="platform">
+        <h1>Powered by Developli platform</h1>
+        <p>
+          We are offering an alternative route towards the traditional hiring
+          process. What do we want in return? Sign up and leave the rest to us.
+        </p>
+        <button>Get started</button>
+      </section>
+      <hr />
 
-  <!-- Platform's block -->
-  <section class="platform">
-    <h1>Powered by Developli platform</h1>
-    <p>We are offering an alternative route towards the traditional hiring process. What do we want in return? Sign up and leave the rest to us.</p>
-    <button>Get started</button>
-  </section>
-  <hr>
+      <article class="standart">
+        <h1>A world of opportunities</h1>
+        <p>
+          We are nost efficient and reliable souce of hiring perocess and two
+          time faster than any other companies
+        </p>
+      </article>
+      <hr />
 
-  <article class="standart">
-    <h1>A world of opportunities</h1>
-    <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-  </article>
-  <hr>
+      <!-- Advantages block -->
+      <section class="advantage">
+        <div class="advantage-card">
+          <h1>Detailed analytics</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
 
-  <!-- Advantages block -->
-  <section class="advantage">
-    <div class="advantage-card">
-      <h1>Detailed analytics</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
+        <div class="advantage-card">
+          <h1>Zoom integration</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
 
-    <div class="advantage-card">
-      <h1>Zoom integration</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
+        <div class="advantage-card">
+          <h1>Smart testing</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
 
-    <div class="advantage-card">
-      <h1>Smart testing</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
+        <div class="advantage-card">
+          <h1>User Rating</h1>
+          <p>
+            We are nost efficient and reliable souce of hiring perocess and two
+            time faster than any other companies
+          </p>
+        </div>
+      </section>
+      <hr />
 
-    <div class="advantage-card">
-      <h1>User Rating</h1>
-      <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-    </div>
-  </section>
-  <hr>
+      <article class="world-class">
+        <h1>Working with world class partners</h1>
+        <div class="world-class-slide-bar">
+          <p>
+            Our hiring process is so simple and easy to do, just follow the
+            steps and you’re done!
+          </p>
+          <div class="buttons-bar">
+            <button><--</button>
+            <button>--></button>
+          </div>
+        </div>
+      </article>
+      <hr />
 
-  <article class="world-class">
-    <h1>Working with world class partners</h1>
-    <div class="world-class-slide-bar">
-      <p>Our hiring process is so simple and easy to do, just follow the steps and you’re done!</p>
-    <div class="buttons-bar">
-      <button><--</button>
-      <button>--></button>
-    </div>
-    </div>
-  </article>
-  <hr>
+      <!-- Reviews block -->
+      <section class="reviews">
+        <div class="reviews-card">
+          <h1>Airbnb</h1>
+          <blockquote>
+            <p>
+              We are nost efficient and reliable souce of hiring perocess and
+              two time faster than any other companies
+            </p>
+          </blockquote>
+          <address>Leila Khoury, CEO</address>
+        </div>
 
-  <!-- Reviews block -->
-  <section class="reviews">
-    <div class="reviews-card">
-      <h1>Airbnb</h1>
-      <blockquote>
-        <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-      </blockquote>
-      <address>Leila Khoury, CEO</address>
-    </div>
+        <div class="reviews-card">
+          <h1>Upwork</h1>
+          <blockquote>
+            <p>
+              We are nost efficient and reliable souce of hiring perocess and
+              two time faster than any other companies We are nost efficient and
+              reliable souce of hiring perocess and two time faster than any
+              other companies
+            </p>
+          </blockquote>
+          <address>Leila Khoury, CEO</address>
+        </div>
 
-    <div class="reviews-card">
-      <h1>Upwork</h1>
-      <blockquote>
-        <p>We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies
-          We are nost efficient and reliable souce of hiring perocess and two time faster than any other companies</p>
-      </blockquote>
-      <address>Leila Khoury, CEO</address>
-    </div>
+        <div class="reviews-card">
+          <h1>Amazon</h1>
+          <blockquote>
+            <p>
+              We are nost efficient and reliable souce of hiring perocess and
+            </p>
+          </blockquote>
+          <address>Leila Khoury, CEO</address>
+        </div>
+      </section>
+      <hr />
 
-    <div class="reviews-card">
-      <h1>Amazon</h1>
-      <blockquote>
-        <p>We are nost efficient and reliable souce of hiring perocess and </p>
-      </blockquote>
-      <address>Leila Khoury, CEO</address>
-    </div>
-  </section>
-  <hr>
+      <!-- ТУТ НЕ ЯСНО -->
+      <!-- Partners block -->
+      <section class="partners-bar">
+        <a>Airbnb</a>
+        <a>Rakuten</a>
+        <a>Google</a>
+        <a>Invision</a>
+        <a>stripe</a>
+        <a>zendesk</a>
+      </section>
+      <hr />
 
-  <!-- ТУТ НЕ ЯСНО -->
-  <!-- Partners block -->
-  <section class="partners-bar">
-    <a>Airbnb</a>
-    <a>Rakuten</a>
-    <a>Google</a>
-    <a>Invision</a>
-    <a>stripe</a>
-    <a>zendesk</a>
-  </section>
-  <hr>
+      <section class="get-started">
+        <h1>Hire your dream team today</h1>
+        <button>Get started --></button>
+      </section>
+    </main>
+    <hr />
 
-  <section class="get-started">
-    <h1>Hire your dream team today</h1>
-    <button>Get started --></button>
-  </section>
+    <footer>
+      <div class="upperline">
+        <div class="contacts">
+          <h1 class="logo-footer">Developli</h1>
 
-</main>
-<hr>
+          <div class="contact-us">
+            <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
+            <a href="tel.00966 2 6676760">00966 2 6676760</a>
+          </div>
+        </div>
 
-<footer>
-  <div class="upperline">
-    <div class="contacts">
-      <h1 class="logo-footer">Developli</h1>
-    
-      <div class="contact-us">
-        <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
-        <a href="tel.00966 2 6676760">00966 2 6676760</a>
+        <nav class="nav-footer">
+          <ul type="none">
+            <h3>Employers</h3>
+            <li>Start Hiring</li>
+            <li>Volunteer</li>
+            <li>Diversity and Inclusion</li>
+          </ul>
+
+          <ul type="none">
+            <h3>Candidates</h3>
+            <li>Get Hired</li>
+            <li>Internships</li>
+            <li>Temporary Employment</li>
+            <li>Graduates</li>
+            <li>Volunteer</li>
+          </ul>
+
+          <ul type="none">
+            <h3>Company</h3>
+            <li>For Students</li>
+            <li>Careers</li>
+            <li>Brand Ambassadors</li>
+            <li>About</li>
+            <li>Resources</li>
+            <li>Blog</li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  
-    <nav class="nav-footer">
-      <ul type="none">
-        <h3>Employers</h3>
-        <li>Start Hiring</li>
-        <li>Volunteer</li>
-        <li>Diversity and Inclusion</li>
-      </ul>
-  
-      <ul type="none">
-        <h3>Candidates</h3>
-        <li>Get Hired</li>
-        <li>Internships</li>
-        <li>Temporary Employment</li>
-        <li>Graduates</li>
-        <li>Volunteer</li>
-      </ul>
-  
-      <ul type="none">
-        <h3>Company</h3>
-        <li>For Students</li>
-        <li>Careers</li>
-        <li>Brand Ambassadors</li>
-        <li>About</li>
-        <li>Resources</li>
-        <li>Blog</li>
-      </ul>
-    </nav>
-  </div>
 
-  <div>
-    <hr>
-  </div>
+      <div>
+        <hr />
+      </div>
 
-  <div class="underline">
-    <span>Copyright © 2022</span>
+      <div class="underline">
+        <span>Copyright © 2022</span>
 
-    <ul class="underline-list" type="none">
-      <li class="underline-list-item">Terms of Service</li>
-      <li class="underline-list-item">Privacy policy</li>
-      <li class="underline-list-item">Offer terms</li>
-    </ul>
-
-  </div>
-
-</footer>
-</body>
+        <ul class="underline-list" type="none">
+          <li class="underline-list-item">Terms of Service</li>
+          <li class="underline-list-item">Privacy policy</li>
+          <li class="underline-list-item">Offer terms</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
