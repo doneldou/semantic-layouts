@@ -5,9 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog page</title>
     <style>
+      header,
+      nav,
+      footer,
+      article,
+      section {
+        border-width: 2px;
+        border-style: solid;
+        position: relative;
+        &::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 10;
+          display: block;
+          height: 1.5rem;
+        }
+        /* &:hover {
+          nav::after {
+            z-index: 2000;
+            background-color: aquamarine;
+          }
+        } */
+      }
       header {
         display: flex;
         justify-content: space-between;
+        border-color: red;
+        &::after {
+          color: red;
+          background-color: blue;
+          content: "header";
+        }
+      }
+      nav {
+        border-color: pink;
+        &::after {
+          color: red;
+          background-color: yellow;
+          content: "nav";
+        }
+      }
+      section {
+        border-color: orange;
+        &::after {
+          color: red;
+          background-color: orange;
+          content: "section";
+        }
       }
       .nav-header {
         display: flex;
@@ -27,6 +72,18 @@
       }
       .suggested-item {
         margin: 0px 10px;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-color: orangered;
+        &::after {
+          color: blue;
+          background-color: orangered;
+          content: "article";
+        }
       }
       .article {
         display: grid;
@@ -88,6 +145,13 @@
       footer {
         display: flex;
         flex-direction: column;
+
+        border-color: green;
+        &::after {
+          color: red;
+          background-color: green;
+          content: "footer";
+        }
       }
       .upperline {
         display: flex;
