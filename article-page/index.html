@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article page</title>
+    <style>
+      header,
+      nav,
+      footer,
+      .recommended-article,
+      article {
+        border-width: 2px;
+        border-style: solid;
+        position: relative;
+        &::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 10;
+          display: block;
+          height: 1.5rem;
+        }
+        /* &:hover {
+          nav::after {
+            z-index: 2000;
+            background-color: aquamarine;
+          }
+        } */
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        border-color: red;
+        &::after {
+          color: red;
+          background-color: blue;
+          content: "header";
+        }
+      }
+      nav {
+        border-color: pink;
+        &::after {
+          color: red;
+          background-color: yellow;
+          content: "nav";
+        }
+      }
+      .nav-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px 0px 0px;
+      }
+      .nav-header-item {
+        margin: 10px;
+      }
+
+      .way {
+        display: flex;
+        justify-content: center;
+      }
+      .way-item {
+        margin: 10px;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-color: orangered;
+        &::after {
+          color: blue;
+          background-color: orangered;
+          content: "article";
+        }
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .title-h1 {
+        font-size: 40px;
+      }
+      .pic1 {
+        width: 1240px;
+        height: 660px;
+        border: 1px black dashed;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 940px;
+      }
+      .pic2 {
+        width: 940px;
+        height: 520px;
+        border: 1px black dashed;
+      }
+      .article-section-title {
+        display: flex;
+        justify-content: space-between;
+      }
+      .article-section-button {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .articles-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: 3px black dashed;
+      }
+      .recommended-article {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        gap: 10px;
+
+        border-color: orange;
+        &::after {
+          color: red;
+          background-color: orange;
+          content: "section";
+        }
+      }
+      .recommended-article-section-content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+      }
+      .career-tips-article-section-content {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+
+        border-color: green;
+        &::after {
+          color: red;
+          background-color: green;
+          content: "footer";
+        }
+      }
+      .upperline {
+        display: flex;
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-footer {
+        display: flex;
+      }
+      .underline {
+        display: flex;
+        justify-content: space-between;
+      }
+      .underline-list {
+        margin: 0px 30px;
+        display: flex;
+      }
+      .underline-list-item {
+        margin: 0px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo-header">Developli</h1>
+      <nav>
+        <ul class="nav-header" type="none">
+          <li class="nav-header-item">Employers</li>
+          <li class="nav-header-item">Candidates</li>
+          <li class="nav-header-item">Company</li>
+          <li class="nav-header-item">Blog</li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <ul class="way" type="none">
+      <li class="way-item">Home</li>
+      <li class="way-item">Blog</li>
+      <li class="way-item">
+        How to Work From Home: 24 Tips From People Who Do It Successfully
+      </li>
+    </ul>
+
+    <section>
+      <article>
+        <div class="title">
+          <h1 class="title-h1">
+            How to create a career development plan for yourself
+          </h1>
+          <div>
+            <date>28 Sep 2022</date>
+            <a>Career Tips</a>
+          </div>
+          <img class="pic1" src="" alt="pic." />
+        </div>
+        <div class="content">
+          <p>
+            In the office office, your colleagues often pose the greatest threat
+            to keeping you from getting some real, heads-down work done. They
+            drop by your desk, engage you in conversation, and invite you to
+            lunch — or so I hear. The social benefits are nice to have, but they
+            can become a challenge if you're easily distracted.
+          </p>
+          <p>
+            However, at the home office, while family members can be a
+            distraction, I find that it's easy for you to become your own worst
+            enemy. Because without coworkers around, you’re free to drop those
+            pesky inhibitions. At the home office, no one's watching. You don't
+            necessarily feel that same peer pressure or communal obligation to
+            get stuff done. (Also, you don't have to wear pants.)
+          </p>
+          <h2>
+            Communicate expectations with anyone who will be home with you.
+          </h2>
+          <p>
+            Of course, you might be working from home but still have "company."
+            Make sure any roommates, family members, and dogs (well, maybe not
+            dogs) respect your space during work hours. Just because you're
+            working from home doesn't mean you're home.
+          </p>
+          <h4>- Take clear breaks.</h4>
+          <p>
+            When your office starts working from home, you'll likely miss the
+            casual social interactions with colleagues you're used to throughout
+            the day. When working from home, you don't have the small talk and
+            other activities that make each day at the office unique.
+          </p>
+          <h4>- Interact with other humans.</h4>
+          <p>
+            When your office starts working from home, you'll likely miss the
+            casual social interactions with colleagues you're used to throughout
+            the day. When working from home, you don't have the small talk and
+            other activities that make each day at the office unique.
+          </p>
+          <h4>- Prepare meals the night before.</h4>
+          <p>
+            When you're in your own home, it can be tempting to spend time
+            preparing a nice breakfast and lunch for yourself, chopping and
+            cooking included. Don't use precious minutes making your food the
+            day of work — cook it the night before.
+          </p>
+          <img class="pic2" src="" alt="pic." />
+          <h2>Developing Healthy Remote Eating Habits</h2>
+          <p>
+            It’s easy to get caught up in the work-from-home lifestyle and let
+            unhealthy habits take over. It happens gradually as we relax in our
+            home office environment. By creating better boundaries around your
+            eating habits, you can help ensure that you avoid the remote work
+            nutrition challenges that so many of us fight.
+          </p>
+          <p>
+            If you're ready to take the leap into a remote or flexible job that
+            better supports your overall well-being, we can help! Take the tour
+            and discover all of the ways that a FlexJobs membership can support
+            your remote career, from our database of scam-free jobs to our
+            expert career coaching and more.
+          </p>
+        </div>
+      </article>
+    </section>
+    <hr />
+    <section class="recommended-article">
+      <div class="article-section-title">
+        <div>
+          <h1>Recommended</h1>
+          <p>You might also like these articles</p>
+        </div>
+        <button class="article-section-button">View All --></button>
+      </div>
+
+      <div class="recommended-article-section-content">
+        <article class="articles-card">
+          <date>15 Jun 2022</date>
+          <p>Career Tips</p>
+          <h1>How to Use Your Resume to Tell a Story</h1>
+        </article>
+        <article class="articles-card">
+          <date>11 Apr 2022</date>
+          <p>Interviews</p>
+          <h1>The 10 Best Global Cities for Digital Nomads</h1>
+        </article>
+        <article class="articles-card">
+          <date>31 Mar 2022</date>
+          <p>Interviews</p>
+          <h1>How to End a Networking Conversation Tactfully</h1>
+        </article>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="upperline">
+        <div class="contacts">
+          <h1 class="logo-footer">Developli</h1>
+
+          <div class="contact-us">
+            <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
+            <a href="tel.00966 2 6676760">00966 2 6676760</a>
+          </div>
+        </div>
+
+        <nav class="nav-footer">
+          <ul type="none">
+            <h3>Employers</h3>
+            <li>Start Hiring</li>
+            <li>Volunteer</li>
+            <li>Diversity and Inclusion</li>
+          </ul>
+
+          <ul type="none">
+            <h3>Candidates</h3>
+            <li>Get Hired</li>
+            <li>Internships</li>
+            <li>Temporary Employment</li>
+            <li>Graduates</li>
+            <li>Volunteer</li>
+          </ul>
+
+          <ul type="none">
+            <h3>Company</h3>
+            <li>For Students</li>
+            <li>Careers</li>
+            <li>Brand Ambassadors</li>
+            <li>About</li>
+            <li>Resources</li>
+            <li>Blog</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <hr />
+      </div>
+
+      <div class="underline">
+        <span>Copyright © 2022</span>
+
+        <ul class="underline-list" type="none">
+          <li class="underline-list-item">Terms of Service</li>
+          <li class="underline-list-item">Privacy policy</li>
+          <li class="underline-list-item">Offer terms</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
