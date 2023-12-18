@@ -5,52 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main page</title>
     <style>
+      :root {
+        --semantic-tag-header: "header";
+        --semantic-tag-header-color: red;
+        --semantic-tag-header-bg-color: blue;
+        --semantic-tag-header-border-color: red;
+      }
+
       header,
       nav,
       footer,
       article,
-      section {
+      section,
+      ul,
+      li,
+      h1,
+      h2,
+      h3,
+      p,
+      button,
+      address,
+      span,
+      div {
         border-width: 2px;
         border-style: solid;
         position: relative;
+
         &::after {
           position: absolute;
           top: 0;
           right: 0;
           z-index: 10;
-          display: block;
+          display: none;
           height: 1.5rem;
         }
-        /* &:hover {
-          nav::after {
-            z-index: 2000;
-            background-color: aquamarine;
+
+        &:hover {
+          &::after {
+            display: block;
           }
-        } */
+        }
       }
+
       header {
         display: flex;
         justify-content: space-between;
-        border-color: red;
+        border-color: var(--semantic-tag-header-border-color);
         &::after {
-          color: red;
-          background-color: blue;
-          content: "header";
+          color: var(--semantic-tag-header-color);
+          background-color: var(--semantic-tag-header-bg-color);
+          content: var(--semantic-tag-header);
         }
       }
       nav {
-        border-color: pink;
+        border-color: blue;
         &::after {
-          color: red;
-          background-color: yellow;
+          color: blue;
+          background-color: red;
           content: "nav";
         }
       }
       section {
-        border-color: orange;
+        border-color: green;
         &::after {
-          color: red;
-          background-color: orange;
+          color: yellow;
+          background-color: green;
           content: "section";
         }
       }
@@ -59,11 +78,102 @@
         flex-direction: column;
         align-items: center;
 
-        border-color: orangered;
+        border-color: yellow;
+        &::after {
+          color: green;
+          background-color: yellow;
+          content: "article";
+        }
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+
+        border-color: red;
+        &::after {
+          color: red;
+          background-color: blue;
+          content: "footer";
+        }
+      }
+      ul {
+        border-color: orange;
+        &::after {
+          color: orange;
+          background-color: gray;
+          content: "ul";
+        }
+      }
+      li {
+        border-color: brown;
+        &::after {
+          color: brown;
+          background-color: black;
+          content: "li";
+        }
+      }
+      h1 {
+        border-color: blue;
         &::after {
           color: blue;
-          background-color: orangered;
-          content: "article";
+          background-color: red;
+          content: "h1";
+        }
+      }
+      h2 {
+        border-color: red;
+        &::after {
+          color: red;
+          background-color: blue;
+          content: "h2";
+        }
+      }
+      h3 {
+        border-color: blue;
+        &::after {
+          color: blue;
+          background-color: red;
+          content: "h3";
+        }
+      }
+      p {
+        border-color: silver;
+        &::after {
+          color: silver;
+          background-color: blueviolet;
+          content: "p";
+        }
+      }
+      button {
+        border-color: gold;
+        &::after {
+          color: gold;
+          background-color: crimson;
+          content: "button";
+        }
+      }
+      address {
+        border-color: cornflowerblue;
+        &::after {
+          color: cornflowerblue;
+          background-color: pink;
+          content: "address";
+        }
+      }
+      span {
+        border-color: fuchsia;
+        &::after {
+          color: fuchsia;
+          background-color: olive;
+          content: "span";
+        }
+      }
+      div {
+        border-color: aquamarine;
+        &::after {
+          color: aquamarine;
+          background-color: rebeccapurple;
+          content: "div";
         }
       }
 
@@ -131,19 +241,16 @@
       }
       .partners-bar {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0px 50px;
       }
-      footer {
+      .partners-bar-list {
         display: flex;
-        flex-direction: column;
-
-        border-color: green;
-        &::after {
-          color: red;
-          background-color: green;
-          content: "footer";
-        }
+        justify-content: space-between;
+        padding: 0px 40px 0px 0px;
+      }
+      .partners-bar-item {
+        margin: 10px 50px;
       }
       .upperline {
         display: flex;
@@ -171,7 +278,7 @@
   <body>
     <!-- Header -->
     <header>
-      <h1 class="logo-header">Developli</h1>
+      <span class="logo-header">Developli</span>
       <nav>
         <ul class="nav-header" type="none">
           <li class="nav-header-item">Employers</li>
@@ -199,7 +306,7 @@
       <hr />
 
       <article class="standart">
-        <h1>With Developli, hiring is easy-peasy, lemon squeezy</h1>
+        <h2>With Developli, hiring is easy-peasy, lemon squeezy</h2>
         <p>
           Our hiring process is so simple and easy to do, just follow the steps
           and you’re done!
@@ -210,7 +317,7 @@
       <!-- Step's block -->
       <section class="steps">
         <div class="card">
-          <h1>Post your job</h1>
+          <h2>Post your job</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -218,7 +325,7 @@
         </div>
 
         <div class="card black-card">
-          <h1>Manage applicants</h1>
+          <h2>Manage applicants</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -226,7 +333,7 @@
         </div>
 
         <div class="card">
-          <h1>Easily find quality matches</h1>
+          <h2>Easily find quality matches</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -237,7 +344,7 @@
 
       <!-- Platform's block -->
       <section class="platform">
-        <h1>Powered by Developli platform</h1>
+        <h2>Powered by Developli platform</h2>
         <p>
           We are offering an alternative route towards the traditional hiring
           process. What do we want in return? Sign up and leave the rest to us.
@@ -247,7 +354,7 @@
       <hr />
 
       <article class="standart">
-        <h1>A world of opportunities</h1>
+        <h2>A world of opportunities</h2>
         <p>
           We are nost efficient and reliable souce of hiring perocess and two
           time faster than any other companies
@@ -258,7 +365,7 @@
       <!-- Advantages block -->
       <section class="advantage">
         <div class="advantage-card">
-          <h1>Detailed analytics</h1>
+          <h2>Detailed analytics</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -266,7 +373,7 @@
         </div>
 
         <div class="advantage-card">
-          <h1>Zoom integration</h1>
+          <h2>Zoom integration</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -274,7 +381,7 @@
         </div>
 
         <div class="advantage-card">
-          <h1>Smart testing</h1>
+          <h2>Smart testing</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -282,7 +389,7 @@
         </div>
 
         <div class="advantage-card">
-          <h1>User Rating</h1>
+          <h2>User Rating</h2>
           <p>
             We are nost efficient and reliable souce of hiring perocess and two
             time faster than any other companies
@@ -292,15 +399,15 @@
       <hr />
 
       <article class="world-class">
-        <h1>Working with world class partners</h1>
+        <h2>Working with world class partners</h2>
         <div class="world-class-slide-bar">
           <p>
             Our hiring process is so simple and easy to do, just follow the
             steps and you’re done!
           </p>
           <div class="buttons-bar">
-            <button><--</button>
-            <button>--></button>
+            <button>&lt;--</button>
+            <button>--&gt;</button>
           </div>
         </div>
       </article>
@@ -309,7 +416,7 @@
       <!-- Reviews block -->
       <section class="reviews">
         <div class="reviews-card">
-          <h1>Airbnb</h1>
+          <h2>Airbnb</h2>
           <blockquote>
             <p>
               We are nost efficient and reliable souce of hiring perocess and
@@ -320,7 +427,7 @@
         </div>
 
         <div class="reviews-card">
-          <h1>Upwork</h1>
+          <h2>Upwork</h2>
           <blockquote>
             <p>
               We are nost efficient and reliable souce of hiring perocess and
@@ -333,7 +440,7 @@
         </div>
 
         <div class="reviews-card">
-          <h1>Amazon</h1>
+          <h2>Amazon</h2>
           <blockquote>
             <p>
               We are nost efficient and reliable souce of hiring perocess and
@@ -347,17 +454,31 @@
       <!-- ТУТ НЕ ЯСНО -->
       <!-- Partners block -->
       <section class="partners-bar">
-        <a>Airbnb</a>
-        <a>Rakuten</a>
-        <a>Google</a>
-        <a>Invision</a>
-        <a>stripe</a>
-        <a>zendesk</a>
+        <ul class="partners-bar-list" type="none">
+          <li class="partners-bar-item">
+            <a>Airbnb</a>
+          </li>
+          <li class="partners-bar-item">
+            <a>Rakuten</a>
+          </li>
+          <li class="partners-bar-item">
+            <a>Google</a>
+          </li>
+          <li class="partners-bar-item">
+            <a>Invision</a>
+          </li>
+          <li class="partners-bar-item">
+            <a>stripe</a>
+          </li>
+          <li class="partners-bar-item">
+            <a>zendesk</a>
+          </li>
+        </ul>
       </section>
       <hr />
 
       <section class="get-started">
-        <h1>Hire your dream team today</h1>
+        <h2>Hire your dream team today</h2>
         <button>Get started --></button>
       </section>
     </main>
@@ -366,12 +487,12 @@
     <footer>
       <div class="upperline">
         <div class="contacts">
-          <h1 class="logo-footer">Developli</h1>
+          <span class="logo-footer">Developli</span>
 
-          <div class="contact-us">
+          <address class="contact-us">
             <p>Rouwais Dist, Jeddah Rouwais Saudi Arabia</p>
-            <a href="tel.00966 2 6676760">00966 2 6676760</a>
-          </div>
+            <a href="tel:0096626676760">00966 2 6676760</a>
+          </address>
         </div>
 
         <nav class="nav-footer">
@@ -410,11 +531,13 @@
       <div class="underline">
         <span>Copyright © 2022</span>
 
-        <ul class="underline-list" type="none">
-          <li class="underline-list-item">Terms of Service</li>
-          <li class="underline-list-item">Privacy policy</li>
-          <li class="underline-list-item">Offer terms</li>
-        </ul>
+        <nav>
+          <ul class="underline-list" type="none">
+            <li class="underline-list-item">Terms of Service</li>
+            <li class="underline-list-item">Privacy policy</li>
+            <li class="underline-list-item">Offer terms</li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>
